@@ -418,6 +418,7 @@
     }
     .how_it_works{
       margin-top: 50px;
+      margin-bottom: 61px;
   
     }
     .how_it_works h2{
@@ -431,18 +432,39 @@
       display: flex;
       align-items: center;
       width: 100%;
-      padding-top: 27px;
-      padding-bottom: 27px;
+      padding-top: 19px;
+      padding-bottom: 12px;
       width: 100%;
       background-color: #F6F6F6;
       margin-top: 19px;
       border-radius: 21px;
     }
+    .steps p {
+      font-size: 16px;
+      font-weight: 500;
+    }
     .steps i{
       color: #5F5F5F;
-      margin-left: 25px;
+      margin-left: 10px;
       margin-right:25px;
-      font-size: 19px;
+      font-size: 21px;
+    }
+    #fa-store{
+      font-size: 16px;
+    }
+    .count{
+      position: relative;
+      background-color: #9356DC;
+      color: white;
+      width: 26px; /* Adjust width */
+      height: 26px; /* Adjust height */
+      text-align: center;
+      border-radius: 50%;
+      line-height: 1px;
+      right: 12px;
+    }
+    .count p{
+      font-size: 14px;
     }
     /* #fa-list{
       font-size: 18px;
