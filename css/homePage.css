@@ -382,6 +382,185 @@ template {
 [hidden] {
   display: none;
 }
+@media all and (min-width: 769px) {
+  /* Desktop styles go here */
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header img {
+    width: 120px; /* Adjust the width as needed */
+  }
+.pad-container{
+  padding:40px
+}
+  .Bellvillle {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .paris-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .paris-container p {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .book {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+  }
+
+  .book h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .book p {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+  }
+
+  .hp-button {
+
+    padding: 13px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(to top left, #9356DC, #FF79DA);
+    font-family: "Roboto";
+    color: white;
+    box-shadow: 2px 6px 5px rgb(0 0 0 / 15%);
+    width: 250px;
+  }
+
+  .how_it_works {
+    margin-top: 50px;
+    margin-bottom: 61px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .steps-container {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 15px;
+    text-align: center;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+  }
+
+  .steps p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .steps i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #last-step{
+    background-color: #F6EDFF;
+  }
+  #fa-store {
+    font-size: 16px;
+    color:#9356DC
+  }
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 25%; /* Adjust the width as needed */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    
+  }
+.new-label{
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  /* Adjusted to the top-right corner */
+  background-color: #99E2D0;
+  color: #008969;
+  padding: 8px;
+  padding-right: 28px;
+  padding-left: 28px;
+  border-radius: 3px;
+}
+  .card-title {
+    font-size: 24px;
+  }
+
+  .card-paragraph {
+    font-size: 18px;
+  }
+
+  .heart-icon {
+    font-size: 32px;
+    margin-top: 12px;
+  }
+
+  footer {
+    margin-top: 50px;
+    padding: 30px;
+  }
+
+  .logo-foot {
+    width: 120px; /* Adjust the width as needed */
+  }
+
+  .foot-links i {
+    font-size: 18px;
+  }
+
+  footer p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
 
 @media all and (max-width: 768px) {
 
@@ -419,11 +598,10 @@ template {
     color: #464646;
   }
 
-  main {
+  .pad-container{
     padding-left: 20px;
     padding-right: 20px;
   }
-
   .book {
     display: flex;
     flex-direction: column;
@@ -597,7 +775,7 @@ template {
   }
 
   footer {
-    margin-top: 24px;
+    margin-top: 67px;
     background-color: #353535;
     color: white;
     padding-top: 30px;
