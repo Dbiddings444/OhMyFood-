@@ -387,6 +387,24 @@ template {
     display: none;
 }
 
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Initial position offscreen */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Move to original position */
+    }
+}
+
+
+
 @media all and (max-width: 768px) {
     header {
         display: flex;
@@ -394,13 +412,19 @@ template {
         align-items: center;
         justify-content: center;
         padding: 20px;
-        padding-bottom: 15px
+        padding-bottom: 15px;
+        padding-left: 25px;
     }
 
     header img {
         width: 176px;
-        margin-left: 65px;
+        align-self: center;
         /* Adjust the width as needed */
+    }
+
+    .fa-arrow-left {
+        font-size: 26px;
+        align-self: self-start;
     }
 
     .img-container img {
@@ -413,8 +437,15 @@ template {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-right: 20px;
+        padding-right: 23px;
         padding-left: 10px;
+    }
+
+    .border {
+        border-top: 3px solid #99E2D0;
+        width: 50px;
+        margin-bottom: 15px;
+        margin-left: 10px;
     }
 
     .heart-icon {
@@ -426,7 +457,7 @@ template {
         border-radius: 36px 36px 0 0;
         background-color: #F6F6F6;
         position: relative;
-        bottom: 56px;
+        margin-top: -59px;
         width: 100%;
     }
 
@@ -437,29 +468,71 @@ template {
     }
 
     .dish-head {
-        padding-bottom: 5px;
         font-weight: 300;
-        border-bottom: 2px solid #99E2D0;
-        width: 10%;
+        width: 100%;
         font-size: 20px;
         margin-left: 10px;
+        margin-bottom: 6px;
     }
 
     .dish-card {
+        opacity: 0;
         width: 100%;
         border-radius: 20px;
         display: flex;
-        flex-direction: column;
+        flex-direction: horizontal;
         background-color: white;
-        padding: 15px;
         margin-bottom: 15px;
         box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0.1);
+        animation: appear 0.5s forwards;
+        padding-right: 0;
+        overflow: hidden; /* Hide overflow to prevent long titles from breaking layout */
+        white-space: nowrap; /* Prevent long titles from wrapping */
+        text-overflow: ellipsis; /* Show suspension points for long titles */
+        transition: transform 0.3s ease; 
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
     }
 
     .dish-card p {
         margin: 0;
         font-size: 20px;
         font-weight: 400;
+    }
+
+    .checkMark {
+        align-items: center;
+        background-color: #99E2D0;
+        border-radius: 0px 20px 20px 0;
+        display: none;
+       
+    }
+    
+    .dish-card:hover .checkMark{
+        display: flex;
+    }
+
+    .fa-circle-check {
+        padding: 21px;
+        font-size: 29px;
+        color: white;
+    }
+
+    .dish1 {
+        animation-delay: 0.2s;
+    }
+
+    .dish2 {
+        animation-delay: 0.4s;
+    }
+
+    .dish3 {
+        animation-delay: 0.6s;
     }
 
     .card-row {
@@ -481,6 +554,7 @@ template {
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+        margin-bottom: 36px;
     }
 
     .menu-button {
@@ -495,9 +569,10 @@ template {
         font-family: "Roboto";
         color: white;
         box-shadow: 2px 6px 5px rgb(0 0 0 / 15%);
-        width: 170px;
+        width: 41%;
     }
-    .filler{
+
+    .filler {
         background-color: #F6F6F6;
     }
 
