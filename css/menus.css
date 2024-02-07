@@ -489,7 +489,7 @@ template {
         overflow: hidden; /* Hide overflow to prevent long titles from breaking layout */
         white-space: nowrap; /* Prevent long titles from wrapping */
         text-overflow: ellipsis; /* Show suspension points for long titles */
-        transition: transform 0.3s ease; 
+        
     }
 
     .card-content {
@@ -497,6 +497,9 @@ template {
         flex-direction: column;
         width: 100%;
         padding: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .dish-card p {
@@ -505,24 +508,28 @@ template {
         font-weight: 400;
     }
 
-    .checkMark {
+    .checkmark {
         align-items: center;
         background-color: #99E2D0;
         border-radius: 0px 20px 20px 0;
-        display: none;
-       
+        display: flex;
+        position: relative;
     }
     
-    .dish-card:hover .checkMark{
-        display: flex;
+    .dish-card:hover  .fa-circle-check{
+        margin: 0;
+        opacity: 100%;
     }
 
     .fa-circle-check {
         padding: 21px;
         font-size: 29px;
         color: white;
+        margin-left: -72px;
+        opacity: 0;
+        transition: margin 700ms,opacity 0.5s ease;
     }
-
+ 
     .dish1 {
         animation-delay: 0.2s;
     }
