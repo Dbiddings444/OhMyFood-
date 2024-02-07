@@ -382,6 +382,10 @@ template {
 [hidden] {
   display: none;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 @media all and (min-width: 769px) {
   /* Desktop styles go here */
 
@@ -536,11 +540,6 @@ template {
 
   .card-paragraph {
     font-size: 18px;
-  }
-
-  .heart-icon {
-    font-size: 32px;
-    margin-top: 12px;
   }
 
   footer {
