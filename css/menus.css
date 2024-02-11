@@ -403,26 +403,20 @@ template {
     }
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes hideLoader {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
+@keyframes container_opacity {
+       0% {
         opacity: 0;
-        visibility: hidden;
+    }
+
+    100% {
+       
+        opacity: 100%;
     }
 }
+
+
+
 
 @media all and (max-width: 768px) {
     header {
@@ -523,6 +517,7 @@ template {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        
     }
 
     .dish-card p {
@@ -538,19 +533,23 @@ template {
         border-radius: 0px 20px 20px 0;
         display: flex;
         position: relative;
-        transition: margin-left 1s, ;
+        justify-content: center;
+        width: 0;
+        opacity: 0;
+        transition: .5s;
     }
 
-    .dish-card:hover .fa-circle-check {
+    .dish-card:hover .fa-circle-check  {
         margin: 0;
         opacity: 100%;
     }
-
+    .dish-card:hover .checkmark  {
+        width: 100px;
+        opacity: 1;
+    }
     .fa-circle-check {
-        padding: 21px;
         font-size: 29px;
         color: white;
-        margin-left: -72px;
         opacity: 0;
         transition: margin 700ms, opacity 0.5s ease;
     }
@@ -653,23 +652,4 @@ template {
         margin-bottom: 6px
     }
 
-    .loader {
-        border: 16px solid #f3f3f3;
-        /* Light grey */
-        border-top: 16px solid #3498db;
-        /* Blue */
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        animation: spin 5s linear infinite;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -60px;
-        /* Half of the height */
-        margin-left: -60px;
-        /* Half of the width */
-        z-index: 9999;
-        /* Ensure it appears on top of other elements */
-    }
 }

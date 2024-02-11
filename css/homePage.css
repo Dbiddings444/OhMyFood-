@@ -386,6 +386,28 @@ a{
   text-decoration: none;
   color: black;
 }
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+      opacity: 100%;
+  }
+
+  100% {
+      transform: rotate(360deg);
+      opacity: 100%;
+      border-top: 6px solid #99E2D0;
+  }
+}
+@keyframes hideContent {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @media all and (min-width: 769px) {
   /* Desktop styles go here */
 
@@ -808,5 +830,31 @@ a{
   footer p {
     margin: 0px;
     margin-bottom: 6px
+  }
+  .loader-container {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 100%;
+    animation: hideContent 2s linear;
+  }
+
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #FF79DA;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    opacity: 0;
   }
 }
