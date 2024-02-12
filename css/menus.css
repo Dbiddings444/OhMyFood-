@@ -416,7 +416,185 @@ template {
 }
 
 
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Add desktop-specific styles here */
 
+@media all and (min-width: 769px) {
+   /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply default font styles */
+body {
+padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header img {
+    width: 176px;
+    margin: auto;
+}
+header i {
+    font-size: x-large;
+}
+
+/* Image container styles */
+.img-container {
+    margin-bottom: 20px;
+}
+
+.img-container img {
+    padding-top: 0;
+    width: 100%;
+    height: 344px;
+    object-fit: cover;
+}
+
+/* Menu header styles */
+.menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu_header h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 32px;
+}
+.items-container{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.heart-icon {
+    font-size: 24px;
+    color: #FF79DA;
+}
+
+/* Dishes container styles */
+.dishes-container {
+    margin-bottom: 30px;
+}
+
+.dish-head {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Dish card styles */
+.dish-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.card-content p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-row p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.checkmark {
+    background-color: #99E2D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    height: 100px;
+}
+
+.checkmark i {
+    color: #fff;
+}
+
+/* Button container styles */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #9356DC;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #a56dea;
+}
+
+/* Footer styles */
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.foot-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foot-links i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.logo-foot {
+    width: 105px;
+    margin-bottom: 15px;
+}
+
+}
 
 @media all and (max-width: 768px) {
     header {
@@ -623,6 +801,10 @@ template {
         padding-left: 20px;
         padding-bottom: 30px;
     }
+
+    footer a{
+        color: white;
+      }
 
     .foot p {
         font-size: 14px;
