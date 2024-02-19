@@ -622,6 +622,7 @@ a {
         color: white;
         box-shadow: 2px 6px 5px rgb(0 0 0 / 15%);
         width: 41%;
+        cursor: pointer ;
     }
 
     .menu-button:hover {
