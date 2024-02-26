@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>ohmyfood</title>
     <!-- Link your CSS file or include styles here -->
+    <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/menus.css" />
     <script src="https://kit.fontawesome.com/aa5ed3a68c.js" crossorigin="anonymous"></script>
 </head>
@@ -16,14 +17,21 @@
         <img src="assets/images/logo/ohmyfood.png" alt="ohMyFood logo" >
     </header>
     <main>
+        <section>
         <div class="img-container" id="overSized1">
             <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="overSized" alt="">
         </div>
+    </section>
+<section>
         <div class="items-container">
             <div class="menu_header">
                 <h1>The Enchanted Plate</h1>
-                <i class="far fa-heart heart-icon"></i>
+                <div class="fa-stack heart-items">
+                    <i class="fa fa-regular fa-heart fa-stack-2x heart-empty"></i>
+                    <i class="fa-solid fa-heart fa-stack-2x heart-fill"></i>
+                  </div>
             </div>
+            <section>
             <div class="dishes-container">
                 <h2 class="dish-head">ENTREES</h2>
                 <div class="border"></div>
@@ -76,11 +84,12 @@
                     </div>
                 </div>
             </div>
-
+        </section>
+        <section>
             <div class="dishes-container">
                 <h2 class="dish-head">MAIN DISH</h2>
                 <div class="border"></div>
-                <div class="dish-card dish1">
+                <div class="dish-card dish5">
                     <div class="card-content">
                         <p class="dish-name">Fresh Buttered Scallops</p>
                         <div class="card-row">
@@ -92,7 +101,7 @@
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
-                <div class="dish-card dish2">
+                <div class="dish-card dish6">
                     <div class="card-content">
                         <p class="dish-name">Pan-Fried Lobster</p>
                         <div class="card-row">
@@ -104,7 +113,7 @@
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
-                <div class="dish-card dish3">
+                <div class="dish-card dish7">
                     <div class="card-content">
                         <p class="dish-name">Braised Ox Tail</p>
                         <div class="card-row">
@@ -117,11 +126,12 @@
                     </div>
                 </div>
             </div>
-
+        </section>
+<section>
             <div class="dishes-container">
                 <h2 class="dish-head">DESSERTS</h2>
                 <div class="border"></div>
-                <div class="dish-card dish1">
+                <div class="dish-card dish8">
                     <div class="card-content">
                         <p class="dish-name">Chocolate and Hazelnut Macaroon</p>
                         <div class="card-row">
@@ -133,7 +143,7 @@
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
-                <div class="dish-card dish2">
+                <div class="dish-card dish9">
                     <div class="card-content">
                         <p class="dish-name">Baba au rhum</p>
                         <div class="card-row">
@@ -145,7 +155,7 @@
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
-                <div class="dish-card dish3">
+                <div class="dish-card dish10">
                     <div class="card-content">
                         <p class="dish-name">Lemon Meringue Pie</p>
                         <div class="card-row">
@@ -158,10 +168,12 @@
                     </div>
                 </div>
             </div>
+        </section>
             <div class="button-container">
                 <div class="menu-button">Order</div>
             </div>
         </div>
+    </section>
         <div class="filler"></div>
     </main>
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
     <!-- Link your CSS file or include styles here -->
+    <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/homePage.css" />
     <script
       src="https://kit.fontawesome.com/aa5ed3a68c.js"
@@ -28,13 +29,13 @@
 
       <!-- Semantic Main Content Area -->
       <main>
-        <div class="book">
+        <section class="book">
           <h2>Book the menu you like</h2>
           <p>Discover top-of-the-art restaurants we picked for you</p>
           <div class="hp-button">Explore our restaurants</div>
-        </div>
-        <div class="pad-container">
-          <div class="how_it_works">
+        </section>
+       
+          <section class="how_it_works">
             <h2>How it works</h2>
             <div class="steps-container">
               <div class="steps">
@@ -53,8 +54,8 @@
                 <p>Go enjoy it at a restaurant</p>
               </div>
             </div>
-          </div>
-          <div class="restaurants">
+          </section>
+          <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="card-container">
               <a href="theFullPallette.html">
@@ -69,7 +70,10 @@
                       <h3 class="card-title">The Full Palette</h3>
                       <p class="card-paragraph">New York</p>
                     </div>
-                    <i class="far fa-heart heart-icon"></i>
+                    <div class="fa-stack heart-items">
+                      <i class="fa fa-regular fa-heart fa-stack-2x heart-empty"></i>
+                      <i class="fa-solid fa-heart fa-stack-2x heart-fill"></i>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -85,7 +89,10 @@
                     <h3 class="card-title">The Enchanted Plate</h3>
                     <p class="card-paragraph">New York</p>
                   </div>
-                  <i class="far fa-heart heart-icon"></i>
+                  <div class="fa-stack heart-items">
+                    <i class="fa fa-regular fa-heart fa-stack-2x heart-empty"></i>
+                    <i class="fa-solid fa-heart fa-stack-2x heart-fill"></i>
+                  </div>
                 </div>
               </div>
             </a>
@@ -100,7 +107,10 @@
                     <h3 class="card-title">Bastille</h3>
                     <p class="card-paragraph">New York</p>
                   </div>
-                  <i class="far fa-heart heart-icon"></i>
+                  <div class="fa-stack heart-items">
+                    <i class="fa fa-regular fa-heart fa-stack-2x heart-empty"></i>
+                    <i class="fa-solid fa-heart fa-stack-2x heart-fill"></i>
+                  </div>
                 </div>
               </div>
             </a>
@@ -115,13 +125,15 @@
                     <h3 class="card-title">Le Gourmand</h3>
                     <p class="card-paragraph">New York</p>
                   </div>
-                  <i class="far fa-heart heart-icon"></i>
+                  <div class="fa-stack heart-items">
+                    <i class="fa fa-regular fa-heart fa-stack-2x heart-empty"></i>
+                    <i class="fa-solid fa-heart fa-stack-2x heart-fill"></i>
+                  </div>
                 </div>
               </div>
             </a>
             </div>
-          </div>
-        </div>
+          </section>
       </main>
 
       <!-- Semantic Footer -->
